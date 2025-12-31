@@ -10,9 +10,11 @@ const config = {
     semi: true,
     singleQuote: true,
     bracketSameLine: false,
-    bracketSpacing: false,
+    bracketSpacing: true,
     jsxSingleQuote: true,
     useTabs: false,
+    plugins: ['prettier-plugin-svelte'],
+    overrides: [{ files: '*.svelte', options: { parser: 'svelte' } }],
 };
 
 export default config;

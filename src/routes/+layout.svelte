@@ -1,11 +1,15 @@
 <script lang="ts">
-	import favicon from '$lib/assets/favicon.svg';
+    import favicon from '$lib/assets/favicon.svg';
+    import Typography from '$lib/components/typography.svelte';
 
-	let { children } = $props();
+    let { children } = $props();
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+    <link rel="icon" href={favicon} />
 </svelte:head>
 
-{@render children()}
+<div>
+    <Typography>hi</Typography>
+    {@render children()}
+</div>
